@@ -10,11 +10,20 @@
 		586BDD2A1FC75F5E009FA8B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BDD291FC75F5E009FA8B8 /* AppDelegate.swift */; };
 		586BDD2C1FC75F5E009FA8B8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BDD2B1FC75F5E009FA8B8 /* FirstViewController.swift */; };
 		586BDD2E1FC75F5E009FA8B8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BDD2D1FC75F5E009FA8B8 /* SecondViewController.swift */; };
-		586BDD311FC75F5E009FA8B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586BDD2F1FC75F5E009FA8B8 /* Main.storyboard */; };
 		586BDD331FC75F5E009FA8B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 586BDD321FC75F5E009FA8B8 /* Assets.xcassets */; };
 		586BDD361FC75F5E009FA8B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586BDD341FC75F5E009FA8B8 /* LaunchScreen.storyboard */; };
 		586BDD411FC75F5E009FA8B8 /* FitnessAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BDD401FC75F5E009FA8B8 /* FitnessAppTests.swift */; };
 		586BDD4C1FC75F5E009FA8B8 /* FitnessAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BDD4B1FC75F5E009FA8B8 /* FitnessAppUITests.swift */; };
+		586BDD5A1FC76076009FA8B8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BDD591FC76076009FA8B8 /* MapViewController.swift */; };
+		586BDD5C1FC760BF009FA8B8 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BDD5B1FC760BF009FA8B8 /* Database.swift */; };
+		586BDD5E1FC760F9009FA8B8 /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BDD5D1FC760F9009FA8B8 /* ActivitiesViewController.swift */; };
+		586BDD601FC76134009FA8B8 /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BDD5F1FC76134009FA8B8 /* ActivityDetailViewController.swift */; };
+		586BDD621FC7617A009FA8B8 /* ActivitiesNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BDD611FC7617A009FA8B8 /* ActivitiesNavigationController.swift */; };
+		586BDD691FC76795009FA8B8 /* ActivitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BDD681FC76795009FA8B8 /* ActivitiesTableViewCell.swift */; };
+		586BDD6C1FC76875009FA8B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586BDD6A1FC76875009FA8B8 /* Main.storyboard */; };
+		586BDD6D1FC76D5C009FA8B8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586BDD641FC76204009FA8B8 /* CoreLocation.framework */; };
+		586BDD6E1FC76D66009FA8B8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586BDD661FC76236009FA8B8 /* CoreMotion.framework */; };
+		586BDD6F1FC76D6B009FA8B8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586BDD651FC76211009FA8B8 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +48,6 @@
 		586BDD291FC75F5E009FA8B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		586BDD2B1FC75F5E009FA8B8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		586BDD2D1FC75F5E009FA8B8 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		586BDD301FC75F5E009FA8B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		586BDD321FC75F5E009FA8B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		586BDD351FC75F5E009FA8B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		586BDD371FC75F5E009FA8B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +57,16 @@
 		586BDD471FC75F5E009FA8B8 /* FitnessAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitnessAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		586BDD4B1FC75F5E009FA8B8 /* FitnessAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessAppUITests.swift; sourceTree = "<group>"; };
 		586BDD4D1FC75F5E009FA8B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		586BDD591FC76076009FA8B8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		586BDD5B1FC760BF009FA8B8 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		586BDD5D1FC760F9009FA8B8 /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
+		586BDD5F1FC76134009FA8B8 /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
+		586BDD611FC7617A009FA8B8 /* ActivitiesNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesNavigationController.swift; sourceTree = "<group>"; };
+		586BDD641FC76204009FA8B8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		586BDD651FC76211009FA8B8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		586BDD661FC76236009FA8B8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		586BDD681FC76795009FA8B8 /* ActivitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewCell.swift; sourceTree = "<group>"; };
+		586BDD6B1FC76875009FA8B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../FitnessApp 2/FitnessApp/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				586BDD6F1FC76D6B009FA8B8 /* MapKit.framework in Frameworks */,
+				586BDD6E1FC76D66009FA8B8 /* CoreMotion.framework in Frameworks */,
+				586BDD6D1FC76D5C009FA8B8 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +104,7 @@
 				586BDD3F1FC75F5E009FA8B8 /* FitnessAppTests */,
 				586BDD4A1FC75F5E009FA8B8 /* FitnessAppUITests */,
 				586BDD271FC75F5E009FA8B8 /* Products */,
+				586BDD631FC76204009FA8B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +121,16 @@
 		586BDD281FC75F5E009FA8B8 /* FitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				586BDD671FC7676B009FA8B8 /* TableCells */,
 				586BDD291FC75F5E009FA8B8 /* AppDelegate.swift */,
 				586BDD2B1FC75F5E009FA8B8 /* FirstViewController.swift */,
 				586BDD2D1FC75F5E009FA8B8 /* SecondViewController.swift */,
-				586BDD2F1FC75F5E009FA8B8 /* Main.storyboard */,
+				586BDD591FC76076009FA8B8 /* MapViewController.swift */,
+				586BDD5D1FC760F9009FA8B8 /* ActivitiesViewController.swift */,
+				586BDD5F1FC76134009FA8B8 /* ActivityDetailViewController.swift */,
+				586BDD6A1FC76875009FA8B8 /* Main.storyboard */,
+				586BDD611FC7617A009FA8B8 /* ActivitiesNavigationController.swift */,
+				586BDD5B1FC760BF009FA8B8 /* Database.swift */,
 				586BDD321FC75F5E009FA8B8 /* Assets.xcassets */,
 				586BDD341FC75F5E009FA8B8 /* LaunchScreen.storyboard */,
 				586BDD371FC75F5E009FA8B8 /* Info.plist */,
@@ -126,6 +154,24 @@
 				586BDD4D1FC75F5E009FA8B8 /* Info.plist */,
 			);
 			path = FitnessAppUITests;
+			sourceTree = "<group>";
+		};
+		586BDD631FC76204009FA8B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				586BDD661FC76236009FA8B8 /* CoreMotion.framework */,
+				586BDD651FC76211009FA8B8 /* MapKit.framework */,
+				586BDD641FC76204009FA8B8 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		586BDD671FC7676B009FA8B8 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				586BDD681FC76795009FA8B8 /* ActivitiesTableViewCell.swift */,
+			);
+			path = TableCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +281,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				586BDD6C1FC76875009FA8B8 /* Main.storyboard in Resources */,
 				586BDD361FC75F5E009FA8B8 /* LaunchScreen.storyboard in Resources */,
 				586BDD331FC75F5E009FA8B8 /* Assets.xcassets in Resources */,
-				586BDD311FC75F5E009FA8B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +308,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				586BDD621FC7617A009FA8B8 /* ActivitiesNavigationController.swift in Sources */,
 				586BDD2E1FC75F5E009FA8B8 /* SecondViewController.swift in Sources */,
+				586BDD5E1FC760F9009FA8B8 /* ActivitiesViewController.swift in Sources */,
+				586BDD601FC76134009FA8B8 /* ActivityDetailViewController.swift in Sources */,
 				586BDD2A1FC75F5E009FA8B8 /* AppDelegate.swift in Sources */,
 				586BDD2C1FC75F5E009FA8B8 /* FirstViewController.swift in Sources */,
+				586BDD5C1FC760BF009FA8B8 /* Database.swift in Sources */,
+				586BDD691FC76795009FA8B8 /* ActivitiesTableViewCell.swift in Sources */,
+				586BDD5A1FC76076009FA8B8 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,20 +352,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		586BDD2F1FC75F5E009FA8B8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				586BDD301FC75F5E009FA8B8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		586BDD341FC75F5E009FA8B8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				586BDD351FC75F5E009FA8B8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		586BDD6A1FC76875009FA8B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				586BDD6B1FC76875009FA8B8 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -431,6 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FitnessApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bishalwagle.fitnessapp.FitnessApp;
@@ -445,6 +498,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FitnessApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bishalwagle.fitnessapp.FitnessApp;
