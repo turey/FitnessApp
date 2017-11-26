@@ -63,14 +63,14 @@ extension AppDelegate{
                 if let user = user{
                     let activitiesCount = User.currentUser.activities.count
                     print("FOUND USER : \(activitiesCount)")
-                    for item in User.currentUser.activities{
-                        print("\(item.duration) ======= Id: \(item.Id) , started: \(item.startDate),  ")
-                    }
-                    self.addFakePaths()
-                    completion()
+//                    for item in User.currentUser.activities{
+//                        print("\(item.duration) ======= Id: \(item.Id) , started: \(item.startDate),  ")
+//                    }
+//                    self.addFakePaths()
+//                    completion()
                 }else{
                     User.createUser(userId: "user1", completion: { (user) in
-                        self.addFakePaths()
+//                        self.addFakePaths()
                         completion()
                     })
                 }
