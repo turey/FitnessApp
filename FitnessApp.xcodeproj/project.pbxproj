@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28A306C31FCA9BD000ECDCA2 /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A306C21FCA9BD000ECDCA2 /* GoalViewController.swift */; };
 		586BDD2A1FC75F5E009FA8B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BDD291FC75F5E009FA8B8 /* AppDelegate.swift */; };
 		586BDD2C1FC75F5E009FA8B8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BDD2B1FC75F5E009FA8B8 /* FirstViewController.swift */; };
 		586BDD2E1FC75F5E009FA8B8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BDD2D1FC75F5E009FA8B8 /* SecondViewController.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28A306C21FCA9BD000ECDCA2 /* GoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
 		586BDD261FC75F5E009FA8B8 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		586BDD291FC75F5E009FA8B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		586BDD2B1FC75F5E009FA8B8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				586BDD611FC7617A009FA8B8 /* ActivitiesNavigationController.swift */,
 				586BDD5B1FC760BF009FA8B8 /* Database.swift */,
 				58D019A91FCA96F800C79538 /* Main.storyboard */,
+				28A306C21FCA9BD000ECDCA2 /* GoalViewController.swift */,
 				586BDD321FC75F5E009FA8B8 /* Assets.xcassets */,
 				586BDD341FC75F5E009FA8B8 /* LaunchScreen.storyboard */,
 				586BDD371FC75F5E009FA8B8 /* Info.plist */,
@@ -309,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				586BDD621FC7617A009FA8B8 /* ActivitiesNavigationController.swift in Sources */,
+				28A306C31FCA9BD000ECDCA2 /* GoalViewController.swift in Sources */,
 				586BDD2E1FC75F5E009FA8B8 /* SecondViewController.swift in Sources */,
 				586BDD5E1FC760F9009FA8B8 /* ActivitiesViewController.swift in Sources */,
 				586BDD601FC76134009FA8B8 /* ActivityDetailViewController.swift in Sources */,

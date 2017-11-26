@@ -228,6 +228,9 @@ extension MapViewController{
                         
                     })
                 }else{
+                    if (activity.StepsWalked != nil) {
+                   User.currentUser.goalProgress += Int(activity.StepsWalked)
+                    }
                     User.currentUser.activities.append(activity)
                 }
             }

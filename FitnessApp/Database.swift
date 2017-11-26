@@ -179,6 +179,8 @@ class User: NSObject, NSCoding{
     var UserID: String!
     var activities =  [Activity]()
     var currentActivity : Activity!
+    var goal: Int = 8000
+    var goalProgress: Int = 0
     static var currentUser : User!
     
     convenience required init(coder decoder: NSCoder) {
