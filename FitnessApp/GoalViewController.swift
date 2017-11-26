@@ -35,6 +35,9 @@ class GoalViewController :UIViewController {
         if let newValue = Int(newGoalInput.text!) {
             User.currentUser.goal = newValue;
             User.currentUser.goalProgress = 0;
+            User.save(user: User.currentUser, completion: { (user) in
+                
+            })
             updateUI()
         }
     }

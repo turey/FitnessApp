@@ -186,11 +186,15 @@ class User: NSObject, NSCoding{
     convenience required init(coder decoder: NSCoder) {
         self.init()
         self.activities = decoder.decodeObject(forKey: "user-activities") as! [Activity]
+        self.goal = decoder.decodeInteger(forKey: "user-goal")
+        self.goalProgress = decoder.decodeInteger(forKey: "user-goal-progress")
         self.UserID = decoder.decodeObject(forKey: "user-id") as! String
     }
     
     func encode(with coder: NSCoder){
         coder.encode(self.activities, forKey: "user-activities")
+        coder.encode(self.goal, forKey: "user-goal")
+        coder.encode(self.goalProgress, forKey: "user-goal-progress")
         if self.UserID != nil{
             coder.encode(self.UserID, forKey: "user-id")
         }
