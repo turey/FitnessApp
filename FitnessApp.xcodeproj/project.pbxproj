@@ -20,10 +20,10 @@
 		586BDD601FC76134009FA8B8 /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BDD5F1FC76134009FA8B8 /* ActivityDetailViewController.swift */; };
 		586BDD621FC7617A009FA8B8 /* ActivitiesNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BDD611FC7617A009FA8B8 /* ActivitiesNavigationController.swift */; };
 		586BDD691FC76795009FA8B8 /* ActivitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BDD681FC76795009FA8B8 /* ActivitiesTableViewCell.swift */; };
-		586BDD6C1FC76875009FA8B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586BDD6A1FC76875009FA8B8 /* Main.storyboard */; };
 		586BDD6D1FC76D5C009FA8B8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586BDD641FC76204009FA8B8 /* CoreLocation.framework */; };
 		586BDD6E1FC76D66009FA8B8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586BDD661FC76236009FA8B8 /* CoreMotion.framework */; };
 		586BDD6F1FC76D6B009FA8B8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586BDD651FC76211009FA8B8 /* MapKit.framework */; };
+		58D019AB1FCA96F900C79538 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D019A91FCA96F800C79538 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +66,7 @@
 		586BDD651FC76211009FA8B8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		586BDD661FC76236009FA8B8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		586BDD681FC76795009FA8B8 /* ActivitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewCell.swift; sourceTree = "<group>"; };
-		586BDD6B1FC76875009FA8B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../FitnessApp 2/FitnessApp/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		58D019AA1FCA96F800C79538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,9 +128,9 @@
 				586BDD591FC76076009FA8B8 /* MapViewController.swift */,
 				586BDD5D1FC760F9009FA8B8 /* ActivitiesViewController.swift */,
 				586BDD5F1FC76134009FA8B8 /* ActivityDetailViewController.swift */,
-				586BDD6A1FC76875009FA8B8 /* Main.storyboard */,
 				586BDD611FC7617A009FA8B8 /* ActivitiesNavigationController.swift */,
 				586BDD5B1FC760BF009FA8B8 /* Database.swift */,
+				58D019A91FCA96F800C79538 /* Main.storyboard */,
 				586BDD321FC75F5E009FA8B8 /* Assets.xcassets */,
 				586BDD341FC75F5E009FA8B8 /* LaunchScreen.storyboard */,
 				586BDD371FC75F5E009FA8B8 /* Info.plist */,
@@ -281,7 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				586BDD6C1FC76875009FA8B8 /* Main.storyboard in Resources */,
+				58D019AB1FCA96F900C79538 /* Main.storyboard in Resources */,
 				586BDD361FC75F5E009FA8B8 /* LaunchScreen.storyboard in Resources */,
 				586BDD331FC75F5E009FA8B8 /* Assets.xcassets in Resources */,
 			);
@@ -360,10 +360,10 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		586BDD6A1FC76875009FA8B8 /* Main.storyboard */ = {
+		58D019A91FCA96F800C79538 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				586BDD6B1FC76875009FA8B8 /* Base */,
+				58D019AA1FCA96F800C79538 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
