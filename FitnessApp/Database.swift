@@ -157,22 +157,31 @@ class Activity: NSObject, NSCoding{
         }
     }
     
-    func endActivity(pedometerManager: CMPedometer){
-        self.EndTime = Int32(Date().timeIntervalSince1970)
-        if(CMPedometer.isStepCountingAvailable()){
-            pedometerManager.queryPedometerData(from: self.startDate, to: self.endDate, withHandler: { (data, error) in
-                if(error == nil){
-                    if let data = data{
-                        self.StepsWalked = Int32(data.numberOfSteps)
-                    }else{
-                        self.StepsWalked = 0
-                    }
-                }else{
-                    self.StepsWalked = 0
-                }
-            })
-        }
+//    func endActivity(pedometerManager: CMPedometer){
+//        self.EndTime = Int32(Date().timeIntervalSince1970)
+//        if(CMPedometer.isStepCountingAvailable()){
+//            pedometerManager.queryPedometerData(from: self.startDate, to: self.endDate, withHandler: { (data, error) in
+//                if(error == nil){
+//                    if let data = data{
+//                        self.StepsWalked = Int32(data.numberOfSteps)
+//                    }else{
+//                        self.StepsWalked = 0
+//                    }
+//                }else{
+//                    self.StepsWalked = 0
+//                }
+//            })
+//        }
+//    }
+    func updateStepsWalked(stepsTaken: Int){
+        self.StepsWalked = Int32(stepsTaken)
     }
+    
+    func endActivity(){
+        self.EndTime = Int32(Date().timeIntervalSince1970)
+    }
+
+
 }
 
 class User: NSObject, NSCoding{

@@ -168,26 +168,34 @@ extension MapViewController{
         if let duration = User.currentUser.currentActivity?.duration{
             self.TimerLabel.text = duration
         }
-        if(CMPedometer.isStepCountingAvailable()){
-            self.pedometerManger.queryPedometerData(from: User.currentUser.currentActivity.startDate, to: Date(), withHandler: { (data, error) in
-                if(error == nil){
-                    if let data = data{
-                        self.Pedometer.text = String(describing: data.numberOfSteps)
-                    }
-                }
-            })
-        }
+      
     }
-    
     @objc func LabelTimerStart(){
         if(self.TimerLabelUpdateTimer == nil){
             self.TimerLabelUpdateTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MapViewController.timerLabelUpdate), userInfo: nil, repeats: true)
             UIView.animate(withDuration: 0.25, animations: {
+                
                 self.TimerLabel.alpha = 1
                 if(CMPedometer.isStepCountingAvailable()){
                     self.Pedometer.alpha = 1
                 }
             })
+            if(CMPedometer.isStepCountingAvailable()){
+                if(User.currentUser.currentActivity != nil){
+                    self.pedometerManger.startUpdates(from: Date(), withHandler: { (data, error) in
+                        if(error == nil){
+                            if let data = data{
+                                DispatchQueue.main.async {
+                                    let steps = Int(truncating: data.numberOfSteps)
+                                    print (steps);
+                                    User.currentUser.currentActivity.updateStepsWalked(stepsTaken: steps)
+                                    self.Pedometer.text = String(steps)
+                                }
+                            }
+                        }
+                    })
+                }
+            }
         }
     }
     
@@ -200,12 +208,14 @@ extension MapViewController{
                     UIView.animate(withDuration: 0.25, animations: {
                         self.TimerLabel.alpha = 0
                         self.Pedometer.alpha = 0
+                        self.Pedometer.text = String(0)
                     })
+                    
                 }
             })
+            self.pedometerManger.stopUpdates()
         }
     }
-    
     func toggleButton(){
         if(startState){
             startState = false
@@ -220,7 +230,7 @@ extension MapViewController{
             self.LabelTimerStart()
         }else{
             if let activity = User.currentUser.currentActivity{
-                activity.endActivity(pedometerManager: self.pedometerManger)
+                activity.endActivity()
                 if(activity.difference < 10){
                     let alertController = UIAlertController(title: "Didn't Save", message: "Activity too short", preferredStyle: .alert)
                     alertController.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: { (alert) in }))
